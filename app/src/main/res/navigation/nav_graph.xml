@@ -2,7 +2,7 @@
 <navigation xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/nav_graph"
-    app:startDestination="@+id/fragment1">
+    app:startDestination="@+id/conditional">
 
   <fragment android:id="@+id/fragment1"
       android:name="com.alavpa.navarch.ui.fragment1.Fragment1"
@@ -13,6 +13,10 @@
 
   <action android:id="@+id/goToFragmentGlobal2"
       app:destination="@+id/fragment2"/>
+  <action android:id="@+id/goToFragmentGlobal1"
+      app:destination="@+id/fragment1"/>
+  <action android:id="@+id/goToFragmentGlobal3"
+      app:destination="@+id/fragment3"/>
 
   <fragment android:id="@+id/fragment2"
       android:name="com.alavpa.navarch.ui.fragment2.Fragment2"
@@ -24,5 +28,8 @@
     <deepLink app:uri="navarch://fragments/3"/>
   </fragment>
 
+  <fragment android:id="@+id/conditional"
+      android:name="com.alavpa.navarch.ui.conditional.Conditional"
+      android:label="Conditional"/>
 
 </navigation>
