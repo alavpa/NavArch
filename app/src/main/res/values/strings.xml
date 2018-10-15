@@ -1,0 +1,9 @@
+<resources>
+  <string name="app_name">Navigation Arch</string>
+  <string name="fragment1">Fragment 1</string>
+  <string name="fragment2">Fragment 2</string>
+  <string name="fragment3">Fragment 3</string>
+  <string name="insert">Insert Text</string>
+  <string name="navigation_drawer_open">open</string>
+  <string name="navigation_drawer_close">close</string>
+</resources>
