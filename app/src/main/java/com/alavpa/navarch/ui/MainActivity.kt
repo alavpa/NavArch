@@ -1,6 +1,5 @@
 package com.alavpa.navarch.ui
 
-import android.content.Intent
 import android.os.Bundle
 import android.support.v7.app.ActionBarDrawerToggle
 import android.support.v7.app.AppCompatActivity
@@ -33,7 +32,6 @@ class MainActivity : AppCompatActivity() {
         drawerLayout.navView.setupWithNavController(findNavController(R.id.navHostFragment))
         findNavController(R.id.navHostFragment).onHandleDeepLink(intent)
     }
-
 
     override fun onSupportNavigateUp(): Boolean {
         return findNavController(R.id.navHostFragment).navigateUp()
