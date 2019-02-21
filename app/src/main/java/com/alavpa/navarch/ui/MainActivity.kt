@@ -30,7 +30,7 @@ class MainActivity : AppCompatActivity() {
         toggle.syncState()
 
         drawerLayout.navView.setupWithNavController(findNavController(R.id.navHostFragment))
-        findNavController(R.id.navHostFragment).onHandleDeepLink(intent)
+        findNavController(R.id.navHostFragment).handleDeepLink(intent)
     }
 
     override fun onSupportNavigateUp(): Boolean {
